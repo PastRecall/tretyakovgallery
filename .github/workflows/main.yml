@@ -20,9 +20,7 @@ jobs:
 
     # Шаги для задания
     steps: 
-      - name: Checkout code
       - uses: actions/checkout@v4
-      - name: Setup Node.js
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
