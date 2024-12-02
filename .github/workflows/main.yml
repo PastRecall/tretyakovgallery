@@ -4,11 +4,11 @@ name: tretyakovgallery test
 
 # Триггеры для запуска workflow
 on:
-  # Ручной запуск workflow
-  workflow_dispatch:
   # Автоматический запуск workflow по расписанию (в полночь каждый день)
   schedule:
     - cron: "0 0 * * *"
+  # Ручной запуск workflow
+  workflow_dispatch:
     
 # Задание для workflow
 jobs:
